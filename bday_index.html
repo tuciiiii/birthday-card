@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İyi ki doğdun anne</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Aldrich&display=swap" rel="stylesheet">
+  <!-- Use the bundled CSS filename so you don't need to rename files -->
+  <link rel="stylesheet" href="bday_style.css" />
+</head>
+
+<body>
+  <!-- Background hearts (your image) -->
+  <div class="bg" aria-hidden="true"></div>
+
+  <!-- ENVELOPE SCREEN -->
+  <section id="screen-envelope" class="screen active">
+    <div class="panel">
+      <div class="envelope-3d" id="envelopeBtn" role="button" tabindex="0" aria-label="Zarfı aç">
+        <img class="envelope-img" src="envelope.png" alt="Zarf" />
+        <div class="tap">Dokun / tıkla</div>
+      </div>
+
+      <h1 class="title">Annem için küçük bir sürpriz 💌</h1>
+    </div>
+  </section>
+
+  <!-- LETTER SCREEN -->
+  <section id="screen-letter" class="screen">
+    <div class="panel letter">
+      <div class="window-wrap" aria-hidden="true">
+        <img class="window-img" src="window.png" alt="" />
+      </div>
+
+      <div class="letter-content" role="group" aria-label="Doğum günü mesajı">
+        <div class="chips">
+          <span class="chip">To: Anne</span>
+        </div>
+
+        <h2 class="headline">İyi ki doğdun anne❤️</h2>
+
+        <p class="message" id="messageText">
+          Bana kattığın tüm güzellikler için sana sonsuz teşekkür ederim<br/>
+          Küçükken elimden tuttun, büyürken hep arkamda durdun<br/>
+          İyi ki varsın. Seni çok seviyorum ❤️
+        </p>
+
+        <div class="memories">
+          <div class="mem-title">Bizim anılarımız</div>
+          <div class="photos">
+            <figure class="polaroid tilt-a">
+              <img src="oldp.jpg" alt="Eski fotoğraf" />
+              <figcaption>O zaman</figcaption>
+            </figure>
+
+            <figure class="polaroid tilt-b">
+              <img src="newp.jpg" alt="Yeni fotoğraf" />
+              <figcaption>Bugün</figcaption>
+            </figure>
+          </div>
+          <div class="mem-caption">💖💖💖</div>
+        </div>
+
+        <!-- Pixel kitty with heart -->
+        <div class="kitty" aria-hidden="true">
+          <img src="cat_heart.gif" alt="" />
+        </div>
+
+        <div class="actions">
+          <button class="btn primary" id="celebrateBtn">Kutla 🎉</button>
+          <button class="btn" id="copyBtn">Mesajı kopyala</button>
+          <button class="btn ghost" id="backBtn">Zarfa dön</button>
+        </div>
+
+        <p class="tiny" id="toast" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL SCREEN -->
+  <section id="screen-final" class="screen">
+    <div class="panel final">
+      <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+
+      <h2 class="final-title">Doğum günün kutlu olsun anne💖</h2>
+      <p class="final-sub">İyi ki varsın. Hep yanımdaydın, hep yanımdasın.</p>
+
+      <div class="final-photos">
+        <img src="oldp.jpg" alt="Eski fotoğraf küçük" />
+        <img src="newp.jpg" alt="Yeni fotoğraf küçük" />
+      </div>
+
+      <div class="actions">
+        <button class="btn primary" id="replayBtn">Tekrar izle ↺</button>
+        <button class="btn" id="copyBtn2">Mesajı kopyala</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Use the bundled JS filename so you don't need to rename files -->
+  <script src="bday_script.js"></script>
+</body>
+</html>
